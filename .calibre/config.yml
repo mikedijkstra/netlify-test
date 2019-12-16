@@ -1,0 +1,6 @@
+version: 1
+pull-request-reviews:
+  measurements:
+    - lighthouse-performance-score
+    - first-contentful-paint
+    - consistently-interactive
