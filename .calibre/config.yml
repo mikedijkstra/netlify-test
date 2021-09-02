@@ -5,3 +5,4 @@ version: 1
       password: PASSWORD
       formSelector: form
       passwordSelector: input[type=password]
+      required: true
