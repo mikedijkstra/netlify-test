@@ -1,7 +1,7 @@
 version: 1
-  pullRequestReviews:
-    authentication:
-      url: https://audioeye.com
-      password: PASSWORD
-      formSelector: form
-      passwordSelector: input[type=password]
+pullRequestReviews:
+  authentication:
+    url: https://audioeye.com
+    password: PASSWORD
+    formSelector: form
+    passwordSelector: input[type=password]
