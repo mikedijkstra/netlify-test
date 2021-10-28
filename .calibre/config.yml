@@ -1,4 +1,7 @@
-version: 1
+version: 2
 pullRequestReviews:
-  measurements:
-    - lighthousePerformanceScore
+  - measurements:
+      - firstRender
+      - assetCount
+      - pageSizeInBytes
+      - lighthousePerformanceScore
