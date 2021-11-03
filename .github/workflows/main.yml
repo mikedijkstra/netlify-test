@@ -1,0 +1,17 @@
+name: Create Snapshot
+on:
+  pull_request:
+
+jobs:
+  build:
+    name: calibreapp/github-actions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Snapshot
+        uses: calibreapp/github-actions@main
+        env:
+          CALIBRE_API_TOKEN: ${{ secrets.CALIBRE_API_TOKEN }}
+        with:
+          command: site create-snapshot --site=${{ secrets.CALIBRE_SITE_SLUG }}
+      - name: Get result
+        run: echo "${{steps.set-result.outputs.result}}"
