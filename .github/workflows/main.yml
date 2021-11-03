@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create Snapshot
-        uses: calibreapp/github-actions@main
+        uses: calibreapp/github-actions@latest
         env:
           CALIBRE_API_TOKEN: ${{ secrets.CALIBRE_API_TOKEN }}
         with:
